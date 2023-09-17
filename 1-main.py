@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-Rectangle = __import__('1-rectangle').Rectangle
+""" 1-main """
+from models.rectangle import Rectangle
 
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
+if __name__ == "__main__":
 
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)
+    r1 = Rectangle(10, 2)
+    print(r1.id)
 
+    r2 = Rectangle(2, 10)
+    print(r2.id)
+
+    r3 = Rectangle(10, 2, 0, 0, 12)
+    print(r3.id)
